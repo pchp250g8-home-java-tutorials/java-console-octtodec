@@ -37,7 +37,7 @@ public class OctToDec
         }
         System.out.printf
         (
-            "The decenary equivalent of the binary number %s is %d\r\n",
+            "The decimal equivalent of the binary number %s is %d\r\n",
             strLine, nDecNum
         );
     }
