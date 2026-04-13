@@ -10,8 +10,8 @@ The program does the following:
     5.1. The initial value of the parameter is set to 0, and the final value is set to the number of characters in the string (its length).
     5.2. A series of cycles is performed.
       5.2.1. The code of the next character in the string is determined. It is converted to the number between 0 and 7.
-      The formula used is: character code - character code "0" (or the number 48 is subtracted from the character code).
-      Moreover, the calculation starts from the end of the line.
+             The formula used is: character code - character code "0" (or the number 48 is subtracted from the character code).
+             Moreover, the calculation starts from the end of the line.
       5.2.2. The resulting value is multiplied by a power of eight.
       5.2.3. The value obtained in the previous step is added to the decimal number variable.
       5.2.4. The variable of the factor of power 8 is multiplied by 8, since the number is octal.
