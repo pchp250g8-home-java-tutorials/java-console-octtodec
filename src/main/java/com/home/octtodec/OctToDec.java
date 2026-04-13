@@ -13,10 +13,10 @@ public class OctToDec
     public static void main(String[] args) throws Exception
     {
         final long MAX_INT = 2L * Integer.MAX_VALUE + 1L;
-        var nDecNum = 0;
-        var nOctPower = 1;
+        var nDecNum = 0L;
+        var nOctPower = 1L;
         var console = System.console();
-        var nMaxOctalLen = Math.floor(Math.log(MAX_INT) / Math.log(8));
+        var nMaxOctalLen = Math.ceil(Math.log(MAX_INT) / Math.log(8));
         var oRegExpr = Pattern.compile("^[0-7]+$");
         System.out.println("Input an octal number");
         var strLine = console.readLine();
@@ -37,7 +37,7 @@ public class OctToDec
         }
         System.out.printf
         (
-            "The decimal equivalent of the binary number %s is %d\r\n",
+            "The decimal equivalent of the octal number %s is %d\r\n",
             strLine, nDecNum
         );
     }
